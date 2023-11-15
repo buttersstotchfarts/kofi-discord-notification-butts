@@ -81,9 +81,9 @@ app.use('/', async function (req, res) {
 	try {
 		const embed = new MessageBuilder();
 
-		embed.setAuthor('Ko-fi', 'https://i.imgur.com/J0egcX2.png');
-		embed.setThumbnail('https://i.imgur.com/J0egcX2.png');
-		embed.setTitle('New supporter on Ko-fi ☕');
+		embed.setAuthor('Ko-fi', 'https://assets-global.website-files.com/5c14e387dab576fe667689cf/61e1116779fc0a9bd5bdbcc7_Frame%206.png');
+		embed.setThumbnail('https://assets-global.website-files.com/5c14e387dab576fe667689cf/61e1116779fc0a9bd5bdbcc7_Frame%206.png');
+		embed.setTitle('NEW SILLY SUPPORTER!!! ☕');
 		if (kofi_username) embed.setURL(`https://ko-fi.com/${kofi_username}`);
 
 		switch (payload.tier_name) {
@@ -103,7 +103,7 @@ app.use('/', async function (req, res) {
 		if (payload.message && payload.message !== 'null')
 			embed.addField(`Message`, `${payload.message}`);
 		embed.setFooter(
-			`Thank you for supporting us!`,
+			`THANK YOU!!!! - LAKE`,
 			`https://github.githubassets.com/images/modules/site/icons/funding_platforms/ko_fi.svg`
 		);
 		embed.setTimestamp();
